@@ -10,8 +10,8 @@ import math
 r = 3.14
 h = 5
 
-Surface = (2 * math.pi * r * r) + (2 * math.pi * r * h)
-Volume = math.pi * r*r * h
+surface = (2 * math.pi * r ** 2) + (2 * math.pi * r * h)
+volume = math.pi * r**2 * h
 
-print(Surface)
-print(Volume)
+print(surface)
+print(volume)

@@ -8,3 +8,15 @@ Result: #ore python progra##ing please
 
 '''
 
+string = input("Please enter your message: ")
+
+symbol = input("Please enter your symbol: ")
+
+targetCharacter = string[0]
+
+newString = string\
+    .replace(targetCharacter.upper(), symbol)\
+    .replace(targetCharacter.lower(), symbol)
+
+print(newString)
+
