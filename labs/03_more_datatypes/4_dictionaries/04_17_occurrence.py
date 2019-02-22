@@ -6,3 +6,17 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+input1 = input(str("please add your text here:"))
+#user input
+
+
+input1_list = list(input1)
+print(input1_list)
+
+dict = {}
+
+for i in input1_list:
+    dict[i] = input1_list.count(i)
+
+print(dict)

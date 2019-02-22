@@ -7,3 +7,23 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+list_input = []
+even = []
+uneven = []
+
+
+n = 10
+for i in range(n):
+    list_input.append(int(input("Please enter a number :")))
+
+
+for x in range(1, n, 2):
+    even.append(list_input[x])
+
+for x in range(n-2, -1, -2):
+    even.append(list_input[x])
+
+print(even)
+
+
