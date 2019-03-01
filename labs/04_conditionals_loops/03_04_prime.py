@@ -3,13 +3,18 @@ Print out every prime number between 1 and 100.
 
 '''
 
-x = 0
-y = 0
+for x in range(1, 100):
+    flag = True
+    for y in range(1, x+1):
+        if y == x:
+            continue
+        if y == 1:
+            continue
+        if x % y == 0:
+            flag = False
+            break
 
-for x in range(100):
-    if lambda y: x % y != 0:
+    if flag == True:
         print(x)
-    x += 1
 
-#prime numbers can only be devided by 1 and themselves
-#not finished!!!
+#prime numbers can only be divided by 1 and themselves

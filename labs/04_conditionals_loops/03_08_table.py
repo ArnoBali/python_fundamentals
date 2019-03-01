@@ -8,12 +8,9 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+#hint: argument that is passed to print
 
-x = 0
+for x in range(5):
+    i = x * 10
+    print('%i %i %i %i %i %i %i %i %i %i' % (i, i + 1, i+2, i+3, i+4, i+5, i+6, i+7, i+8, i+9))
 
-while x <= 50:
-    if x % 5 == 0:
-        print(x)
-    x += 1
-
-#hint: argument that is pasted to print
